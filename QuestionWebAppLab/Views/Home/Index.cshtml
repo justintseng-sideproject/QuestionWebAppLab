@@ -1,8 +1,18 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div id="app" class="container">
+
+	<div class="row">
+
+		<div class="col-4" v-for="item in items">
+			{{item}}
+		</div>
+	</div>
+
 </div>
+
+@section Scripts {
+<script src="/js/Home/Index.js"></script>
+}
